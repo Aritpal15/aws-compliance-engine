@@ -24,7 +24,7 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:8000/api/scan", {
+      const response = await fetch("/api/scan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ account_id: accountId }),
@@ -47,7 +47,7 @@ function App() {
   // --- 2. Query DynamoDB Scan Trends History (UNCHANGED) ---
   const fetchHistoryTrend = async (id) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/history/${id}`);
+      const res = await fetch(`/api/history/${id}`);
       if (res.ok) {
         const historyLogs = await res.json();
         setHistoryData(historyLogs);
