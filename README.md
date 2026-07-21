@@ -46,6 +46,21 @@ A cloud-native security auditing platform built to scan AWS infrastructure in re
 
 ---
 
+## 🛠️ System Architecture
+
+![AWS Compliance Engine Architecture](./assets/aws-compliance-engine-architecture.png)
+
+## 📸 Application Screenshots
+
+### Executive Dashboard
+![Dashboard Overview](./assets/dashboard.png)
+
+### Real-Time Rule Evaluation Stream
+![Rule Evaluation](./assets/evaluation-stream.png)
+
+### Generated Audit PDF Report
+![PDF Audit Report](./assets/audit-report.png)
+
 ## ⚡ Local Setup & Development
 
 ### 1. Prerequisites
